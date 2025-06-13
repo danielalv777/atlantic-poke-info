@@ -7,7 +7,7 @@
 
   & .container-login-data {
     height: inherit;
-    width: 60%;
+    width: 50%;
     display: flex;
     padding-left: 8.5rem;
     padding-right: 8.5rem;
@@ -84,7 +84,7 @@
 
   & .container-login-img {
     height: 100%;
-    width: 40%;
+    width: 50%;
     padding: 2.25rem 2.25rem 2.25rem 0;
 
     & .back-img {
@@ -92,6 +92,33 @@
       width: 100%;
       object-fit: contain;
       border-radius: 20px;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .main-login-container {
+    flex-direction: column;
+    align-items: center;
+    & .container-login-data {
+      height: 60%;
+      width: 100%;
+    }
+    & .container-login-img {
+      height: 40%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-login-container {
+    & .container-login-data {
+      width: 100%;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    & .container-login-img {
+      display: none;
     }
   }
 }
