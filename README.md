@@ -28,3 +28,51 @@ export const CREDENCIALES_VALIDAS = [
   { user: 'larvesta123', password: '123456' },
   { user: 'lucarioSNK', password: '123456' },
 ];
+
+```
+
+---
+
+## ⚙️ Cómo ejecutar el proyecto localmente
+
+1. Clonar el repositorio
+
+```ts
+git clone https://github.com/danielalv777/atlantic-poke-info.git
+cd tu-repo
+
+```
+2. Instalar dependencias y Ejecutar el entorno de desarrollo
+
+```ts
+npm install
+npm run dev
+```
+
+---
+
+## 🧪 Tecnologías utilizadas
+
+  - ⚛️ React + Vite
+  - 💅 SCSS Modules
+  - 🪝 React Hooks
+  - 🧠 Zustand (manejo de estado global)
+  - 📡 Fetch API
+  - 🧪 TypeScript
+
+## 📦 Estructura del proyecto
+
+```ts
+src/
+├── app/               # Configuración global (zustand, rutas)
+├── features/          # Login, dashboard, info de pokémon
+├── services/          # Llamadas a la API
+├── assets/            # Imágenes y recursos estáticos
+├── types/             # Tipado de interfaces
+└── App.tsx            # Componente principal
+```
+---
+
+## ✨ Autor
+
+Desarrollado por Jahil Alvarez como proyecto de práctica con la PokéAPI.
