@@ -1,0 +1,97 @@
+.main-login-container {
+  height: 100%;
+  width: 100%;
+  background-color: #202227;
+  display: flex;
+  flex-direction: row;
+
+  & .container-login-data {
+    height: inherit;
+    width: 60%;
+    display: flex;
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+    flex-direction: column;
+    justify-content: center;
+
+    & .card-login {
+      padding: 1.25rem 30px 2.25rem 30px;
+      background-color: #212936;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .title {
+        font-weight: 600;
+        color: #b1e457;
+        font-size: 30px;
+      }
+      & .subtitle {
+        font-weight: 400;
+        color: #696f79;
+        font-size: 22px;
+        margin-bottom: 2rem;
+      }
+      & .container-form {
+        width: 100%;
+
+        & .input-container {
+          margin-bottom: 1.25rem;
+          width: 100%;
+        }
+        & .btn-login {
+          width: 100%;
+          height: 40px;
+          border: none;
+          border-radius: 22px;
+          background-color: #b1e457;
+          color: #212936;
+          font-weight: 600;
+          margin-top: 2.5rem;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #121826;
+            color: #6c727f;
+          }
+          &:focus {
+            background-color: #121826;
+            color: #6c727f;
+          }
+        }
+        & .container-guest {
+          display: flex;
+          justify-content: center;
+          margin-top: 0.8rem;
+
+          & .span-guest {
+            font-size: 16px;
+            font-weight: 600;
+            color: #b1e457;
+            text-decoration: underline;
+
+            &:hover {
+              cursor: pointer;
+              background-color: #121826;
+              color: #6c727f;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .container-login-img {
+    height: 100%;
+    width: 40%;
+    padding: 2.25rem 2.25rem 2.25rem 0;
+
+    & .back-img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+  }
+}

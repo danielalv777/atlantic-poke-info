@@ -1,0 +1,28 @@
+.main-container-info-pokemon {
+  height: inherit;
+}
+.container-pokemon-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.card-pokemon-info {
+  text-align: center;
+  background-color: #f8f8f8;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+  h3 {
+    margin-top: 0.5rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

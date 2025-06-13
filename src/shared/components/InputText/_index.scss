@@ -1,0 +1,86 @@
+.span-title-input {
+  font-size: 16px;
+  font-weight: 300;
+  color: #696f79;
+}
+
+.span-title-input.Error {
+  color: rgb(250, 10, 10);
+}
+
+.input-control-container {
+  height: 50px;
+  width: inherit;
+  background-color: #202227;
+  border: 0.5px solid #8692a6; // puedes cambiar el color
+  border-radius: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 5px;
+}
+
+.input-control-container.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-control-container:focus {
+  box-shadow: 0px 0px 8px -1px #0a3e9e !important;
+}
+
+.input-control-container.Disabled {
+  background-color: #68758d;
+  cursor: not-allowed;
+}
+
+.input-control-container.error-inputText {
+  border-color: rgb(250, 10, 10);
+}
+
+.input-control {
+  height: inherit;
+  width: inherit;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  outline: none;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.input-control.input-is-password {
+  width: 80%;
+}
+
+.input-has-error {
+  border-color: rgb(250, 10, 10);
+}
+
+.span-error-input-message {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(250, 10, 10);
+}
+.btn-icon-input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  &:focus {
+    outline: none;
+  }
+}
