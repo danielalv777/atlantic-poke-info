@@ -14,7 +14,7 @@ export default function useDashboard() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalCount, setTotalCount] = useState(0);
 
-  const limit = 10;
+  const limit = 20;
   const offset = (currentPage - 1) * limit;
   const totalPages = Math.ceil(totalCount / limit);
 
@@ -37,7 +37,10 @@ export default function useDashboard() {
     const fetchPokemons = async () => {
       const pokemonData: DataPokemonGet = await getPokemons(offset, limit);
       console.log('que trae en el useeffect', pokemonData);
-      setPokemons(pokemonData?.results);
+      const pokemonsRamdon = pokemonData.results.sort(
+        () => Math.random() - 0.5
+      );
+      setPokemons(pokemonsRamdon);
       setLoading(false);
       setTotalCount(pokemonData.count);
     };
