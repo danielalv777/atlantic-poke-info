@@ -65,10 +65,9 @@ npm run dev
 ```ts
 src/
 ├── app/               # Configuración global (zustand, rutas)
+├── assets/            # Imágenes y recursos estáticos
 ├── features/          # Login, dashboard, info de pokémon
 ├── services/          # Llamadas a la API
-├── assets/            # Imágenes y recursos estáticos
-├── types/             # Tipado de interfaces
 └── App.tsx            # Componente principal
 ```
 ---
