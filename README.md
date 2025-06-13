@@ -39,7 +39,7 @@ export const CREDENCIALES_VALIDAS = [
 
 ```ts
 git clone https://github.com/danielalv777/atlantic-poke-info.git
-cd tu-repo
+cd atlantic-poke-info
 
 ```
 2. Instalar dependencias y Ejecutar el entorno de desarrollo
